@@ -25,6 +25,7 @@ PlayerTab:AddSlider({
  ValueName = "WS",
  Callback = function(Value)
   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+      print("Walkspeed Changed Succesfully - Chijj")
  end    
 })
 
@@ -38,6 +39,7 @@ PlayerTab:AddSlider({
  ValueName = "Height",
  Callback = function(Value)
   game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+      print("Jumppower Changed Succesfully - Chijj")
  end    
 })
 
@@ -59,13 +61,15 @@ OtherTab:AddButton({
  Name = "Delete Doors",
  Callback = function()
        game.Workspace.Doors:Destroy()
+      print("Deleted Doors Succesfully - Chijj")
    end    
 })
 
 OtherTab:AddButton({
- Name = "Delete Cells (BETA)",
+ Name = "Glitch Game (BETA)",
  Callback = function()
-       game.Workspace.Prison_spawn.Cells:Destroy()
+       game.Workspace.Camera:Destroy()
+      print("Glitched Game Succesfully - Chijj")
    end    
 })
 OrionLib:Init()
