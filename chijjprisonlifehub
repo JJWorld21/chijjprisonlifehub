@@ -40,6 +40,8 @@ PlayerTab:AddSlider({
  Callback = function(Value)
   game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
       print("Jumppower Changed Succesfully - Chijj")
+      
+      PlayerTab:AddParagraph("Credits","Created and developed by https://dsc.gg/chijj")
  end    
 })
 
@@ -70,6 +72,7 @@ OtherTab:AddButton({
  Callback = function()
        game.Workspace.Camera:Destroy()
       print("Glitched Game Succesfully - Chijj")
-   end    
-})
+   end
+  })
+OtherTab:AddParagraph("Credits","Created and developed by https://dsc.gg/chijj")
 OrionLib:Init()
