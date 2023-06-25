@@ -68,10 +68,18 @@ OtherTab:AddButton({
 })
 
 OtherTab:AddButton({
- Name = "Glitch Game (BETA)",
+ Name = "Glitch Game",
  Callback = function()
        game.Workspace.Camera:Destroy()
       print("Glitched Game Succesfully - Chijj")
+   end
+  })
+
+OtherTab:AddButton({
+ Name = "Remove Prison Fences",
+ Callback = function()
+       game.Workspace.Prison_Fences:Destroy()
+      print("Prison Fences Succesfully Removed - Chijj")
    end
   })
 OtherTab:AddParagraph("Credits","Created and developed by https://dsc.gg/chijj")
